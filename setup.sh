@@ -8,7 +8,7 @@ mv_if() { [ -f "$1" ] && mv "$1" "$2"; return 0; }
 
 for f in index.html package.json vite.config.js; do mv_if "$f" app/; done
 for f in index.css main.jsx App.jsx ErrorBoundary.jsx; do mv_if "$f" app/src/; done
-for f in Account AdminReset CharityCheck CryptoCheck Dashboard DecoyCard DetectiveReport EmailCheck EvidencePanel FreezeCredit IC3Report InsuranceCheck InvestigateMessage LinkCheck MedicalCheck PhoneCheck PhotoCheck QRCheck PricingPlans ReportingPanel RiskResult ScamCheck SeniorMode StrangerCheck TaskScamCheck TaxScamCheck USAFlagIcon VoiceInput; do
+for f in Account AdminReset CharityCheck CryptoCheck Dashboard DecoyCard DetectiveReport EmailCheck EvidencePanel FreezeCredit IC3Report InsuranceCheck InvestigateMessage LinkCheck MedicalCheck OperationsPanel PhoneCheck PhotoCheck QRCheck PricingPlans ReportingPanel RiskResult ScamCheck SeniorMode StrangerCheck TaskScamCheck TaxScamCheck USAFlagIcon VoiceInput; do
   mv_if "$f.jsx" app/src/components/
 done
 mv_if Subscriptions.jsx app/src/pages/
